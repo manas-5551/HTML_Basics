@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables,Forms</title>
+</head>
+
+<body>
+    <table border="">
+        <caption>A test table with merged cells</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red eyes</th>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form action="/action_to_perform">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" name="user">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" name="pass">
+        </div>
+        <div>
+            <label for="number">Number:</label>
+            <input type="number" id="number" placeholder="enter no.">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+        </div>
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" id="time">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+            <input type="checkbox" id="ages" name="age">
+            <label for="ages">I am 18+</label>
+        </div>
+        <div>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" id="banana" name="fruit" value="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" id="mango" name="fruit" value="mango">
+            <label for="mango">Mango</label>
+        </div>
+        <div>
+            <input type="checkbox" id="maths" name="subject" value="maths">
+            <label for="maths">Maths</label>
+            <input type="checkbox" id="computer" name="subject" value="computer" checked>
+            <label for="computer">Computer</label>
+            <input type="checkbox" id="science" name="subject" value="science">
+            <label for="science">Science</label>
+        </div>
+        <div>
+            Choose your Profession
+            <select name="profession" id="profession">
+                <option value="student">Student</option>
+                <option selected>Select your profession</option>
+                <option value="developer">Developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="vol">Volume</label>
+            <input type="range" id="vol" min="0" max="50" name="volume" step="5">
+        </div>
+        <div>
+            <label for="feedback">Write your feedback here :</label><br>
+            <textarea name="feedback" id="feedback" placeholder="feedback please" rows="5" cols="20"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in google" name="q">
+        <button>Search</button>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>Search</button>
+    </form>
+</body>
+
+</html>
